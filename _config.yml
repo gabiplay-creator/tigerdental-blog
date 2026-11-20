@@ -1,0 +1,10 @@
+title: 타이거치과 블로그
+description: 치아 건강 정보
+url: "https://blog.tigerdental.co.kr"
+lang: ko
+timezone: Asia/Seoul
+theme: minima
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
