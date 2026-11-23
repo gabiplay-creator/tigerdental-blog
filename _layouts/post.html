@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: site.minima.date_format }}
+      </time>
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div class="post-notice">
+    본 글은 일반적인 구강 건강 정보 제공을 목적으로 작성되었습니다.
+    개인의 구강 상태에 따라 치료 방법, 기간, 결과 및 부작용은 다를 수 있으며,
+    정확한 진단과 치료 계획은 치과의사와의 상담을 통해 결정하시기 바랍니다.
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

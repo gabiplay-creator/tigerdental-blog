@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <p class="clinic-name">{{ site.clinic.name }}</p>
+    <ul class="clinic-info">
+      <li>대표자 : {{ site.clinic.owner }}</li>
+      <li>주소 : {{ site.clinic.address }}</li>
+      <li>전화 : <a href="tel:{{ site.clinic.phone | remove: '-' }}">{{ site.clinic.phone }}</a></li>
+      <li>홈페이지 : <a href="{{ site.clinic.homepage }}" target="_blank" rel="noopener">{{ site.clinic.homepage | remove: 'https://' }}</a></li>
+    </ul>
+    <ul class="clinic-hours">
+      {%- for h in site.clinic.hours %}
+      <li>{{ h }}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+</footer>

@@ -1,9 +1,28 @@
-title: 타이거치과 블로그
+title: 타이거치과의원 블로그
 description: 치아 건강 정보
 url: "https://blog.tigerdental.co.kr"
 lang: ko
 timezone: Asia/Seoul
 theme: minima
+show_excerpts: true
+
+minima:
+  date_format: "%Y.%m.%d"
+
+# 병원 기본정보 (의료법 제57조제3항·시행령 제24조제7항: 사전심의 면제 항목만 기재)
+clinic:
+  name: 타이거치과의원
+  owner: 서인석
+  address: 경기도 수원시 권선구 금곡동 1125 서울JS병원 2층
+  phone: 031-292-2080
+  homepage: https://www.tigerdental.co.kr
+  hours:
+    - "월·수·목·금 10:00 ~ 19:00"
+    - "화 10:00 ~ 21:00 (야간진료)"
+    - "토 10:00 ~ 14:30"
+    - "점심시간 13:00 ~ 14:00 (토요일 제외)"
+    - "일요일 휴진"
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

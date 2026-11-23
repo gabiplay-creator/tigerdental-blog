@@ -1,0 +1,24 @@
+---
+---
+@import "minima";
+
+/* 상단 홈페이지 링크 */
+.home-link { float: right; line-height: 54px; font-size: 15px; color: #424242; }
+.home-link:hover { color: #2a7ae2; text-decoration: none; }
+
+/* RSS 구독 문구 숨김 (feed.xml 자체는 네이버 제출용으로 유지) */
+.rss-subscribe { display: none; }
+
+/* 글 하단 고정 안내 문구 – 본문과 같은 크기 */
+.post-notice {
+  margin-top: 40px; padding: 16px 20px;
+  background: #f6f7f9; border-left: 4px solid #c9ced6;
+  font-size: 16px; line-height: 1.7; color: #333;
+}
+
+/* 하단 병원 정보 */
+.site-footer { padding: 30px 0; font-size: 14px; color: #555; }
+.clinic-name { font-size: 16px; font-weight: 600; color: #222; margin-bottom: 8px; }
+.clinic-info, .clinic-hours { list-style: none; margin: 0 0 10px 0; }
+.clinic-info li, .clinic-hours li { line-height: 1.8; }
+.site-footer a { color: #555; }
